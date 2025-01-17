@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --mzY2: #f1bf36;
+    --mzY1: #e69311;
+    --mzB1: #282828;
+    --mzB2: black;
+    --mzW1: white;
+}
+
+.mz-btn-primary{
+    all: unset;
+    cursor: pointer;
+
+    background-color: var(--mzY2);
+    color: var(--mzB1);
+
+    border: 2px solid var(--mzY2);
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    height: 3rem;
+
+    padding: 0 3.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .5s ease-in-out;
+}
+
+.mz-btn-primary:hover{
+    background-color: var(--mzW1);
+    color: var(--mzB1);
+}
